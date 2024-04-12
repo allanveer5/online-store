@@ -110,7 +110,7 @@ footer{
 }
 @media screen and (max-width: 768px){
     .product{
-        width: calc((100%/2)-30px);
+        width: -22px;
     }
         .header-content h1 {
             margin: 0;
