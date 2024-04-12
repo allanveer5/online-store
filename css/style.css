@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ece5e5;
+}
+header{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    justify-content: space-between;
+    background-color: #000;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header-content h1{
+    margin: 0;
+    flex-grow: 1;
+}
+
+nav ul{
+    list-style: none;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+    margin: 0 15px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.4s ease;
+}
+nav ul li a:hover{
+    color: aqua;
+}
+.cart-icon{
+    display: flex;
+    align-items: center;
+}
+.cart-icon img{
+width: 50px;
+height: auto;
+}
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.product{
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    box-shadow: 0.3s ease;
+}
+.product:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgb(0, 250, 208);
+}
+.product img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.product h2{
+    color: rgb(0, 255, 221);
+
+}
+.price{
+    color: rgb(255, 0, 0.15);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+.add-to-cart{
+background-color: aqua;
+color: #fff;
+border: none;
+padding: 10px 15px;
+cursor: pointer;
+border-radius: 10px;
+transition: background-color 0.3s;
+}
+.add-to-cart:hover{
+background-color: #09fa65;
+}
+footer{
+    background-color: #818181;
+    padding: 30px 0;
+    color: aqua;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    border-top: 2px solid red;
+    bottom: 0;
+}
+@media screen and (max-width: 768px){
+    .product{
+        width: calc((100%/2)-30px);
+    }
+        .header-content h1 {
+            margin: 0;
+            font-size: smaller;
+        }
+    
+        nav ul {
+            font-size: smaller;
+            list-style: none;
+            font-weight: 600;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+    
+        nav ul li {
+            margin: 0 5px;
+        }
+    
+        nav ul li a {
+            color: #fff;
+            font-size: smaller;
+            text-decoration: none;
+            padding: 5px 5px;
+            transition: color 0.4s ease;
+        }
+}
+@media screen and (max-width: 480px){
+    .product{
+        width: 100%;
+    }
+}
